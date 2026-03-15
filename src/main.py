@@ -1,12 +1,12 @@
+from agent import AutonomousAgent
 import logging
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 def main():
-    logger.info("Initializing Autonomous Agent Core...")
-    # Production-grade AI logic goes here
-    print("System Running.")
+    agent = AutonomousAgent("YannBot-v1")
+    decision = agent.reason("Optimize global AI infrastructure efficiency.")
+    print(f"Decision Output: {decision}")
 
 if __name__ == "__main__":
     main()
